@@ -25,15 +25,15 @@ type Config = {
 };
 
 const config: Config = {
-    title: '幻非',
-    description: '幻非的个人博客，记录一些技术或者想法',
-    keywords: ['blog', '博客', '幻非', '技术', '生活', 'huanfei'],
-    url: 'https://www.huanfei.top',
+    title: 'Istarry',
+    description: 'Istarry的个人博客，记录一些技术或者想法',
+    keywords: ['blog', '博客', 'Istarry', '技术', '生活', 'Istarry'],
+    url: 'https://blog.istarry.top',
     language: 'zh-CN',
-    github: 'huanfe1',
-    x: 'huanfe1',
+    github: 'istarry123',
+    x: 'istarry123',
     comment: {
-        repo: 'huanfe1/blog',
+        repo: 'istarry123/blog',
         repoId: 'R_kgDOJfgQ9g',
         mapping: 'pathname',
         category: 'Announcements',
