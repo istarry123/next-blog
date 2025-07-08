@@ -1,0 +1,17 @@
+@use 'sass:meta';
+
+// 滚动条
+#code code::-webkit-scrollbar {
+    @apply h-1;
+}
+
+#code code::-webkit-scrollbar-thumb {
+    @apply rounded-2xl bg-zinc-200 dark:bg-zinc-800;
+}
+
+html {
+    @include meta.load-css('highlight.js/styles/github');
+}
+html.dark {
+    @include meta.load-css('highlight.js/styles/github-dark');
+}

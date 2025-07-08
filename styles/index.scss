@@ -1,0 +1,40 @@
+@use 'sass:meta';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include meta.load-css('highlight.scss');
+@include meta.load-css('article.scss');
+
+@layer base {
+    html {
+        font-family: 'PingFang SC', 'HarmonyOS Sans SC', sans-serif;
+    }
+}
+
+body {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: initial;
+}
+
+header nav > * {
+    @apply flex items-center hover:opacity-70;
+    span {
+        @apply text-xl;
+    }
+}
+
+html {
+    background-color: #fafafa;
+}
+
+html.dark {
+    color: #cecece;
+    background-color: #1b1b1d;
+    img {
+        filter: brightness(0.9);
+    }
+}
