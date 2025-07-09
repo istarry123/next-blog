@@ -33,11 +33,11 @@ const config: Config = {
     github: 'istarry123',
     x: 'istarry123',
     comment: {
-        repo: 'istarry123/blog',
-        repoId: 'R_kgDOJfgQ9g',
+        repo: 'istarry123/next-blog',
+        repoId: 'R_kgDOPI4RKg',
         mapping: 'pathname',
         category: 'Announcements',
-        categoryId: 'DIC_kwDOJfgQ9s4Cdhrx',
+        categoryId: 'DIC_kwDOPI4RKs4CsrRM',
         lang: 'zh-CN',
         strict: '1',
         reactionsEnabled: '0',
@@ -46,7 +46,7 @@ const config: Config = {
         loading: 'lazy',
     },
     analytics: {
-        la51: 'JmvyCfPiIR4wTw9W',
+        la51: '3MkOpp0PSFtHKItW',
         // google: 'G-XFQZ8KB23B',
         // umami: '8727a795-62d6-4c79-9cb0-bdf322099374',
     },
