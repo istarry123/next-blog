@@ -1,4 +1,4 @@
-import { GiscusProps } from '@giscus/react';
+import type { GiscusProps } from '@giscus/react';
 
 type Config = {
     title: string;
@@ -7,8 +7,9 @@ type Config = {
     url: string;
     language: string;
     // 评论功能
-    comment?: GiscusProps;
-    // GitHub userid
+    comment?: {
+        gicsus?: GiscusProps;
+    };
     github?: string;
     x?: string;
     // 页面分析
@@ -17,8 +18,8 @@ type Config = {
         la51?: string;
         umami?: string;
     };
-    // https://follow.is/
-    follow?: {
+    // https://folo.is/
+    folo?: {
         feedId: string;
         userId: string;
     };
@@ -33,26 +34,28 @@ const config: Config = {
     github: 'istarry123',
     x: 'istarry123',
     comment: {
-        repo: 'istarry123/next-blog',
-        repoId: 'R_kgDOPI4RKg',
-        mapping: 'pathname',
-        category: 'Announcements',
-        categoryId: 'DIC_kwDOPI4RKs4CsrRM',
-        lang: 'zh-CN',
-        strict: '1',
-        reactionsEnabled: '0',
-        emitMetadata: '0',
-        inputPosition: 'top',
-        loading: 'lazy',
+        gicsus: {
+            repo: 'istarry123/next-blog',
+            repoId: 'R_kgDOJfgQ9g',
+            mapping: 'pathname',
+            category: 'Announcements',
+            categoryId: 'DIC_kwDOJfgQ9s4Cdhrx',
+            lang: 'zh-CN',
+            strict: '1',
+            reactionsEnabled: '0',
+            emitMetadata: '0',
+            inputPosition: 'top',
+            loading: 'lazy',
+        },
     },
     analytics: {
         la51: '3MkOpp0PSFtHKItW',
         // google: 'G-XFQZ8KB23B',
         // umami: '8727a795-62d6-4c79-9cb0-bdf322099374',
     },
-    follow: {
-        feedId: '48224099084379136',
-        userId: '47261911326774272',
+    folo: {
+        feedId: '167746502255740928',
+        userId: '161761080600974336',
     },
 };
 
